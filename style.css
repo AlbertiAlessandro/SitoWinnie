@@ -1,0 +1,78 @@
+.sections{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#section1{
+    /*
+    background: url("images/sfondoSezione1.jpg") no-repeat center center;
+    */
+}
+
+
+#section2{
+    background-color: lightgray;
+}
+
+#section3{
+    background-color: white;
+}
+
+#section4{
+    background-color: lightgray;
+}
+
+
+#profilo{
+    align-items: center;
+    border-radius: 50%;
+    width: 200px;
+}
+
+
+/* Menu */
+#menu{
+    width: 100%;
+    height: 50px;
+    background: rgb(128, 128, 128);
+    position: fixed;
+}
+
+#menu ul{
+    margin: 0;
+}
+
+#menu li{
+    display: inline;
+    margin: 0 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+}
+
+#menu li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
