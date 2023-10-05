@@ -4,94 +4,45 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <!-- JQuery, agisce sulle animazioni-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
 
-    <!--codice jQuery-->
-    <script>
-        <!--codice per scrollare le pagine, tramite il menu inziale -->
-        jQuery(document).ready(function (){
-          function scrollWin(anc) {
-              target = jQuery(anc);
-              jQuery('html, body').animate({
-                  scrollTop: target.offset().top}, 1000);
-              }
-              jQuery(".menu1").click(function (){
-                  scrollWin("#section1");
-              });
-              jQuery(".menu2").click(function (){
-                  scrollWin("#section2");
-              });
-              jQuery(".menu3").click(function (){
-                  scrollWin("#section3");
-              });
-              jQuery(".menu4").click(function (){
-                  scrollWin("#section4");
-              });
-
-        })
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.1/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-
-
 <body>
-    <!--menu-->
-    <div id="menu" class="flex">
-        <div id="menu_indoor">
-        <ul>
-            <li class="menu1">Home</li>
-            <li class="menu2">Projects</li>
-            <li class="menu3">Section 3</li>
-            <li class="menu4">Contacts</li>
-        </ul>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/iislogo.gif" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
 
-
-
-    <!--sections-->
-    <div id="section1" class="sections flex">
-        <div class="indoor">
-            <div id="image" class="flex">
-                <img id="profilo" src="images/albe.png">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to my website</h1>
+                <p>This amazing website is created by Albe</p>
             </div>
-        <h1>Welcome into my website</h1>
-        </div>
-    </div>
-
-
-    <div id="section2" class="sections flex">
-        <div class="indoor">
-            <h1>Explore my projects</h1>
-            <div class="card w-96 bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="card-title">Deployment</h2>
-                    <p>Instruction about how to do deployment</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Open</button>
-                    </div>
+            <!--lesson HTML card-->
+            <div class="col">
+                <div class="card card1">
+                    <h5>HTML Lesson</h5>
+                    <p>Explore the HTML lesson</p>
+                    <form action="projects/lezioneHTML.html">
+                        <button type="submit">Explore</button>
+                    </form>
+                </div>
+                <!--example card-->
+                <div class="card card2">
+                    <h5>Example</h5>
+                    <p>This is an example of card</p>
                 </div>
             </div>
-
         </div>
 
     </div>
-
-    <div id="section3" class="sections flex">
-
-    </div>
-
-    <div id="section4" class="sections flex">
-
-    </div>
-
 
 
 </body>
