@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deployment</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Come fare il deployment di un progetto da PHPStorm</h1>
+
+<ol>
+    <li>Andare nel menù Tools --> Deployment --> Configuration</li>
+    <li>Premere il pulsante con il simbolo + per aggiungere una nuova configurazione di deploy</li>
+    <li>Dare un nome significativo alla configurazione creata</li>
+    <li>Selezionare come Type SFTP</li>
+    <li>Se non è gia presente, aggiungere una configurazione SSH, selezionando i tre punti...</li>
+    <li>Nel campo Host inserire l'indirizzo di Winnie 10.4.55.123</li>
+    <li>Nel campo Username inserire lo username dato all'inizio dell'anno</li>
+    <li>Come Authentication Type lasciare Password</li>
+    <li>Provare con Test connection se va tutto bene, altrimenti modificare</li>
+    <li>Eventualmente salvare la password</li>
+    <li>Premere OK e tornare alla schermata iniziale</li>
+    <li>Impostare la Root Path del progetto, selezionando l'icona della cartella e andando nella propria cartella, che si trova all'indirizzo /home/username/public_html/sottocartella</li>
+    <li>In WebServer URL inserire l'URL del proprio progetto su Winnie, ade esempio ~albe</li>
+    <li>Spostarsi sul tab Mappings</li>
+    <li>LocalPath lasciare quello preimpostato</li>
+    <li>Negli altri due campi, a meno di cose particolari, inserire / e /</li>
+    <li>Premere infine OK e si avrà una configurazione di deployment</li>
+    <li>Per comodità nel menù Tools --> Deployment si può spuntare Automatic upload</li>
+
+
+</ol>
+<form action="../index.html">
+    <button class="btnLavori" type="submit">Home</button>
+</form>
+
+</body>
+</html>
