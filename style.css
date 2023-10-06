@@ -62,7 +62,6 @@ p{
     color: white;
     font-size: 11px;
     line-height: 15px;
-
 }
 
 button{
@@ -75,6 +74,7 @@ button{
     border-radius: 20px;
     outline: none;
     margin-top: 100px;
+    margin-left: 30px;
     cursor: pointer;
 }
 
