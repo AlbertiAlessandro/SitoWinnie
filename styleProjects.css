@@ -42,3 +42,60 @@ nav ul li a{
     color: white;
     font-size: 13px;
 }
+
+button{
+    width: 60%;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background: lightskyblue;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 100px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.col{
+    flex-basis: 50%;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    align-items: center;
+
+}
+
+.card1{
+    background-color: white;
+}
+
+.card2{
+    background-color: lightgray;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: black;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px black;
+    font-size: 9px;
+    margin-top: 10px;
+}
