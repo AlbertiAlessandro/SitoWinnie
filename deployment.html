@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deployment</title>
+    <style>
+        *{
+            margin: 0;;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            /**background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/backgroundProjects.jpg");
+             */
+            background-position: center;
+            background-size: cover;
+            padding-left: 8%;
+            padding-right: 8%;
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            height: 12%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo{
+            width: 50px;
+            cursor: pointer;
+        }
+
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 60px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <img src="images/iislogo.gif" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>How to Deploy a Project from PHPStorm</h1>
+    <ol>
+        <li>Go to the Tools menu --> Deployment --> Configuration</li>
+        <li>Click the button with the + symbol to add a new deployment configuration</li>
+        <li>Give a meaningful name to the created configuration</li>
+        <li>Select Type as SFTP</li>
+        <li>If it's not already present, add an SSH configuration by clicking the three dots...</li>
+        <li>In the Host field, enter Winnie's address: 10.4.55.123</li>
+        <li>In the Username field, enter the username provided at the beginning of the year</li>
+        <li>Leave Authentication Type as Password</li>
+        <li>Test the connection with Test connection, if everything is fine, or make necessary modifications if needed</li>
+        <li>Optionally, save the password</li>
+        <li>Click OK and return to the initial screen</li>
+        <li>Set the Root Path of the project by clicking the folder icon and navigating to your folder located at /home/username/public_html/subfolder</li>
+        <li>In WebServer URL, enter the URL of your project on Winnie, for example, ~albe</li>
+        <li>Switch to the Mappings tab</li>
+        <li>Leave LocalPath as the default</li>
+        <li>In the other two fields, unless there are specific requirements, enter / and /</li>
+        <li>Finally, click OK, and you will have a deployment configuration</li>
+        <li>For convenience, in the Tools menu --> Deployment, you can check Automatic upload</li>
+    </ol>
+
+
+
+
+</div>
+
+
+</body>
+</html>
