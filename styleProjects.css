@@ -82,7 +82,11 @@ button{
 }
 
 .card2{
-    background-color: lightgray;
+    background-color: white;
+}
+
+.card3{
+    background-color: white;
 }
 
 .card:hover{
