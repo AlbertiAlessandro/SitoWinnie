@@ -8,6 +8,7 @@
             margin: 0;;
             padding: 0;
             font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
         }
 
         .container{
@@ -49,9 +50,24 @@
             color: black;
             font-size: 13px;
         }
+
+        .diagram-container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .diagram {
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
+
 <div class="container">
     <div class="navbar">
         <img src="images/iislogo.gif" class="logo">
@@ -59,12 +75,48 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="">Contacts</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
     </div>
-
-
+    <div class="diagram-container">
+        <h1>Diagramma ER - Biblioteca</h1>
+        <br>
+        <img src="images/biblioteca.png" alt="Diagramma ER - Biblioteca">
+        <div class="diagram">
+            <br>
+            <p>Il diagramma ER rappresenta una biblioteca. La biblioteca è costituita da
+            diverse entità: Libro, Utente e Editore. Tra Libro e Utente vi è una relazione <strong>N a N</strong>,
+            ciò significa che un libro può essere preso in prestito da molti utenti e un utente può prendere
+            in prestito molti libri. Mentre tra Libro e Editore vi è una relazione <strong>N a 1</strong>,
+            ciò significa che un libro deve essere stampato da un editore e un editore può stampare molti libri. All'interno dell'entità
+            Libro c'è la chiave esterna dell'editore, id_editore.</p>
+            <br>
+            <h3>Entità</h3>
+            <ul>
+                <li>Libro</li>
+                <li>Utente</li>
+                <li>Editore</li>
+            </ul>
+            <br>
+            <h3>Relazioni</h3>
+            <ul>
+                <li>Libro - Utente N a N</li>
+                <li>Libro - Editore N a 1</li>
+            </ul>
+            <br>
+            <h3>Attributi</h3>
+            <ul>
+                <li>Libro: (id: int, titolo: string, autore: string)</li>
+                <li>Utente: (id: int, nome: string, cognome: string, email: string)</li>
+                <li>Editore: (id: int nome: string, città: string)</li>
+            </ul>
+            <br>
+            <p>In fine è stato creato lo schema logico del diagramma ER, ovvero vengono create le
+            rispettive tabelle delle entità. Queste tabelle vengono utilizzate all'interno del database.</p>
+            <img src="images/schema_biblioteca.png">
+        </div>
+    </div>
 
 </div>
 
